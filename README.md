@@ -16,3 +16,6 @@ Pequeno jogo feito em Python onde o jogador tenta adivinhar qual é a palavra co
 pip install -r requirements.txt
 ```
 
+# Screenshots
+<img src="/screenshots/image1.png">
+<img src="/screenshots/image2.png">
