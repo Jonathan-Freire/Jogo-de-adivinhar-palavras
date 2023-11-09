@@ -136,7 +136,7 @@ if __name__ == '__main__':
     with open('palavras-dicionario-5-letras.txt', 'r', encoding='utf-8') as dicionario:
         palavras_dicionario = dicionario.readlines()
         palavras_dicionario = [palavra.replace('\n', '') for palavra in palavras_dicionario]
-
+  
     palavra_correta = escolherPalavra()
     maximo_tentativas = 5
     tentativas_realizadas = 1
@@ -149,7 +149,7 @@ if __name__ == '__main__':
         # Tirar os acentos para comparar as palavras e transformar em minúsculas
         palavra_tentativa = palavra_tentativa.lower().translate(str.maketrans(letras)).replace('\n', '')
 
-        while len(palavra_tentativa) != 5 or palavra_tentativa not in (palavras_dicionario):
+        while len(palavra_tentativa) != 5 or palavra_tentativa not in (palavras_dicionario): 
             if len(palavra_tentativa) != 5:
                 print(colored('\n[ ! ] A palavra deve conter 5 letras.\n', 'yellow'))
             elif palavra_tentativa not in (palavras_dicionario):
